@@ -1,0 +1,4 @@
+Notas do Curso React Native 
+
+Repositório do curso: https://github.com/cod3rcursos/curso-react-native.git
+
