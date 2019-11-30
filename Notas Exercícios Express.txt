@@ -1,0 +1,7 @@
+Notas Exercícios Express
+
+Projeto Curso: D:\Marcos\Projetos\React\curso-react-redux\web-moderno\exercicios-web\exercicios-express
+Projeto Marcos: D:\Marcos\Projetos\React\curso-react-native-marcos\exercicios-express
+
+npm init -y
+npm i --save express
