@@ -5,3 +5,65 @@ Projeto Marcos: D:\Marcos\Projetos\React\curso-react-native-marcos\exercicios-ex
 
 npm init -y
 npm i --save express
+
+Instalar a dependência, apenas para ambiente de desenvolvimento:
+npm i --save-dev nodemon
+
+Função do nodemon: Quando a código da aplicação for alterado o nodemon reinicia o serviço automaticamente.
+
+Obs.: O pm2 é para ambiente de produção.
+
+Instalar o nodemon de forma global:
+npm i -g nodemon
+
+Iniciar a aplicação:
+nodemon index.js
+ou
+npm run start
+on
+npm start
+
+Obs.: O "start" é o script definido no arquivo Package.json. E ao executar o nodemon ele executa por padrão o arquivo que está declarado no "main", que é o arquivo "index.js".
+
+Para ambiente de produção, utilizar o pm2. Instalar:
+npm i --save pm2
+
+Arquivo Package.json:
+...
+  "scripts": {
+    "start": "nodemon",
+    "production": "pm2 start index.js --name appx-backend"
+  },
+...
+
+Para executar:
+npm run production
+
+Instalar o pm2 de forma global:
+npm i -g pm2
+
+Monitorar o serviço:
+pm2 monit
+
+Verificar o status:
+pm2 status
+
+Detalhes da aplicação:
+pm2 show 0
+
+Reiniciar a aplicação:
+pm2 restart 0
+ou
+pm2 restart appx-backend
+
+.. onde, 0 - id da aplicação e appx-backend o nome.
+
+Parar a aplicação:
+pm2 stop 0
+
+Finalizar a aplicação:
+pm2 kill
+
+
+
+
