@@ -64,6 +64,11 @@ pm2 stop 0
 Finalizar a aplicação:
 pm2 kill
 
+Utilizando o Postman com o tipo de requisição "options" o postman retorna quais métodos existem disponíveis para a aplicação.
+
+Instalar a dependência body-parser
+npm i --save body-parser
+
 
 
 
