@@ -2,3 +2,41 @@ Notas do Curso React Native
 
 Repositório do curso: https://github.com/cod3rcursos/curso-react-native.git
 
+Configuração do ambiente:
+
+JAVA_HOME=C:\Program Files\Java\jre1.8.0_231
+ANDROID_HOME=C:\Users\marco\AppData\Local\Android\Sdk
+
+Documentação: https://facebook.github.io/react-native/
+
+Variáveis de Ambiente Android Studio:
+ANDROID_HOME=C:\Users\marco\AppData\Local\Android\Sdk
+Adicionar no Path:
+%ANDROID_HOME%\emulator
+%ANDROID_HOME%\tools
+%ANDROID_HOME%\tools\bin
+%ANDROID_HOME%\platform-tools
+
+Em prompt de comando verificar versão do adb e emulator:
+adb --version
+emulator -version
+
+Aceitar as lincenças:
+sdkmanager --licenses
+
+Listar os emuladores que estão instalados no computador:
+emulator -list-avds
+
+Executar o emulador:
+emulator -no-snapshot -avd Nexus_5X_API_29_x86
+
+Configurar o React-Native:
+npm i -g react-native-cli
+
+Criar o projeto exercicios
+react-native init exercicios
+
+Executar o projeto:
+react-native run-android
+
+
