@@ -36,7 +36,52 @@ npm i -g react-native-cli
 Criar o projeto exercicios
 react-native init exercicios
 
+*** IMPORTANTE ***************************************************************
+Antes de fazer o deploy e executar o projeto no emulador do Android, devemos fazer alguns procedimentos antes, devido a um erro: "Unable to load script. Make sure you're either running a Metro server (run 'react-native start') or that your bundle 'index.android.bundle' is package correctly for release.
+
+1) Criar o diretório "android/app/src/main/assets";
+2) Editar o arquivo do projeto node_modules\metro-config\src\defaults\blacklist.js
+	Substituir neste arquivo:
+	
+	var sharedBlacklist = [
+	  /node_modules[/\\]react[/\\]dist[/\\].*/,
+	  /website\/node_modules\/.*/,
+	  /heapCapture\/bundle\.js/,
+	  /.*\/__tests__\/.*/
+	];	
+	
+	por isso:
+	
+	var sharedBlacklist = [
+	  /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
+	  /website\/node_modules\/.*/,
+	  /heapCapture\/bundle\.js/,
+	  /.*\/__tests__\/.*/
+	];
+
+3) Dentro do diretório do raiz do projeto, executar o comando:
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+Fonte no Youtube, mas nos comentários do vídeo que mostra isso que funciona: https://www.youtube.com/watch?v=8FEm1SjL1Vg
+
+******************************************************************************
+
 Executar o projeto:
+npx react-native run-android
+
+Observação: Na aula foi dito que deve ser: 
 react-native run-android
+
+**** Para rodar o projeto no Expo - WINDOWS: *********************************
+- Verificar se o node e npm está instalado:
+node -v
+npm -v
+- Executar o comando:
+npm i -g create-react-native-app
+- Devemos instalar o Python27 e o Visual Studio - C++
+npm i -g envsub
+npm install --global expo-cli@3.7.1
+create-react-native-app test-app
+******************************************************************************
 
 
