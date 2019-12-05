@@ -82,6 +82,7 @@ npm i -g create-react-native-app
 npm i -g envsub
 npm install --global expo-cli@3.7.1
 create-react-native-app test-app
+npm start
 ******************************************************************************
 
 
