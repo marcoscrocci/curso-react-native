@@ -29,6 +29,7 @@ emulator -list-avds
 
 Executar o emulador:
 emulator -no-snapshot -avd Nexus_5X_API_29_x86
+emulator -avd Nexus_5X_API_29_x86
 
 Configurar o React-Native:
 npm i -g react-native-cli
@@ -180,5 +181,8 @@ react-native run-android
 Obs.: Na aula 19, no ambiente do Mac, o Leonardo precisou acrescentar no Path a pasta Emulator, para executar o emulador.
 
 No emulador Ctrl+M para mostrar as opções do Emulator.
+
+
+Aula 20:
 
 
