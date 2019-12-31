@@ -5,7 +5,7 @@ import If from './If'
 
 function parOuImpar(num) {
     const v = num % 2 == 0 ? 'Par' : 'Impar'
-return <Text style={Padrao.ex}>{v}</Text>
+    return <Text style={Padrao.ex}>{v}</Text>
     // if (num % 2 == 0) {
     //     return <Text style={Padrao.ex}>Par</Text>
     // } else {
