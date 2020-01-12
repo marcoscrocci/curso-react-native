@@ -183,6 +183,8 @@ Obs.: Na aula 19, no ambiente do Mac, o Leonardo precisou acrescentar no Path a 
 No emulador Ctrl+M para mostrar as opções do Emulator.
 
 
-Aula 20:
+Aula 26: Cuidado para desenvolver no iOS e Android: A barra superior do Android, onde tem o relógio, não conta como área útil para a aplicação. Já no iOS conta como área útil, então a aplicação fica sobrepondo a barra superior.
+
+
 
 
