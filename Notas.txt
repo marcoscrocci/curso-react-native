@@ -69,9 +69,11 @@ Fonte no Youtube, mas nos comentários do vídeo que mostra isso que funciona: h
 
 Executar o projeto:
 npx react-native run-android
+npx react-native run-ios
 
 Observação: Na aula foi dito que deve ser: 
 react-native run-android
+react-native run-ios
 
 **** Para rodar o projeto no Expo - WINDOWS: *********************************
 - Verificar se o node e npm está instalado:
@@ -185,6 +187,12 @@ No emulador Ctrl+M para mostrar as opções do Emulator.
 
 Aula 26: Cuidado para desenvolver no iOS e Android: A barra superior do Android, onde tem o relógio, não conta como área útil para a aplicação. Já no iOS conta como área útil, então a aplicação fica sobrepondo a barra superior.
 
+https://facebook.github.io/react-native/docs/flexbox.html
+
+Aula 38: Projeto Calculadora
+
+Para criar o projeto:
+react-native init calculator
 
 
 
