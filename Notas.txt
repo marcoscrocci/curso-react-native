@@ -31,6 +31,8 @@ Executar o emulador:
 emulator -no-snapshot -avd Nexus_5X_API_29_x86
 emulator -avd Nexus_5X_API_29_x86
 
+A opção "-no-snapshot" inicia o emulador com um boot "limpo", caso o emulador atual esteja apresentando algum problema ao iniciar.
+
 Configurar o React-Native:
 npm i -g react-native-cli
 
@@ -194,5 +196,14 @@ Aula 38: Projeto Calculadora
 Para criar o projeto:
 react-native init calculator
 
+
+Aula 45: Correção
+Comando de LOG:
+Android: react-native log-android
+iOS: react-native log-ios
+No código: console.debug(typeof this.state.displayValue)
+
+Aula 47 - Projeto Campo Minado
+react-native init mines
 
 
