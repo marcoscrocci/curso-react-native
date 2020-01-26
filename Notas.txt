@@ -209,3 +209,7 @@ react-native init mines
 No iMac é necessário instalar um pacote chamado CocoaPods através do comando no Terminal:
 sudo gem install cocoapods
 
+SourceTree redefinir a senha do Github no Mac OS:
+Menu -> SourceTree -> Preferências -> Avançado -> Remover o usuário que, ao pedir para enviar novamente, o SourceTree solicita o usuário e senha novamente.
+
+
