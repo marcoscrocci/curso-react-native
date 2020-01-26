@@ -209,4 +209,3 @@ react-native init mines
 No iMac é necessário instalar um pacote chamado CocoaPods através do comando no Terminal:
 sudo gem install cocoapods
 
-
