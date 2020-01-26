@@ -206,4 +206,7 @@ No código: console.debug(typeof this.state.displayValue)
 Aula 47 - Projeto Campo Minado
 react-native init mines
 
+No iMac é necessário instalar um pacote chamado CocoaPods através do comando no Terminal:
+sudo gem install cocoapods
+
 
