@@ -244,5 +244,7 @@ npm start
 - Abra uma nova aba do terminal, com o comando "Command + T" e digite o comando:
 react-native run-is
 
+Executar o aplicativo no macOS no emulador do Android:
+Abra o projeto da pasta android no Android Studio e execute por ele.
 
-	
+
