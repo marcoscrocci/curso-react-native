@@ -209,7 +209,40 @@ react-native init mines
 No iMac é necessário instalar um pacote chamado CocoaPods através do comando no Terminal:
 sudo gem install cocoapods
 
+Para projetos que não foram criados no iMac (criados anteriormente no Windows), entrar na pasta ˜seu-projeto/iOS" e executar o comando:
+pod install
+
 SourceTree redefinir a senha do Github no Mac OS:
 Menu -> SourceTree -> Preferências -> Avançado -> Remover o usuário que, ao pedir para enviar novamente, o SourceTree solicita o usuário e senha novamente.
 
+- Configuração do ambiente no Mac OS.
+1) Baixar o Java SDK e instalar.
+2) Configurar a variável de ambiente $JAVA_HOME:
+	2.1) Dentro da pasta /User/marcoscrocci, digitar o comando: nano .bash_profile e incluir o segundo conteúdo:
 
+-----------------------------------------------------------------------------------------
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/
+
+export ANDROID_HOME=/Users/marcoscrocci/Library/Android/sdk/
+
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+-----------------------------------------------------------------------------------------
+
+	2.2) Digitar o comando: source .bash_profile
+
+3) Baixar o NodeJS para Mac OS
+4) Baixar o Android Studio para Mac OS
+5) Baixar o VS Code para Mac OS
+
+
+Executar o aplicativo no macOS no simulador do iPhone:
+- Na pasta do projeto execute primeiro em um terminal: 
+npm start
+- Abra uma nova aba do terminal, com o comando "Command + T" e digite o comando:
+react-native run-is
+
+
+	
