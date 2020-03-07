@@ -267,10 +267,17 @@ Fazer o deploy e executar o aplicativo no simulador do iOS:
 npx react-native run-ios
 
 Listar os emuladores Android disponíveis:
-emulador -list-avds
+emulator -list-avds
 
 Executar o emulador Android:
-emulador -avd Nexus_5X_API_29_x86
+emulator -avd Nexus_5X_API_29_x86
+
+Iniciar o bundle separadamente:
+react-native start
+
+
+
+
 
 
 
