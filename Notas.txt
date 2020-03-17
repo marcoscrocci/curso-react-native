@@ -276,7 +276,10 @@ Iniciar o bundle separadamente:
 react-native start
 
 
-
+Instalar o AsyncStorage:
+npm i @react-native-community/async-storage 
+react-native link @react-native-community/async-storage
+cd ios/ && pod install (apenas no Mac OS)
 
 
 
