@@ -282,7 +282,22 @@ react-native link @react-native-community/async-storage
 cd ios/ && pod install (apenas no Mac OS)
 
 
+Compilar o aplicativo Android por linha de comando.
+Na pasta do projeto, entre na pasta android:
+cd android 
 
+Compilar o projeto e gerar o apk
+./gradlew assembleDebug
+
+Volte a pasta raiz do projeto, digitando cd ..
+Direcione a porta de execução:
+adb reverse tcp:8081 tcp:8081
+
+Entrar na pasta do apk
+cd android/app/build/outputs/apk/debug
+
+Instalar o aplicativo no emulador ou dispositivo físico
+adb install app-debug.apk
 
 
 
